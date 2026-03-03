@@ -1,19 +1,20 @@
 using System;
+using System.Threading.Tasks;
 
 namespace Agent4
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             int number = 0;
             bool isValidInput = false;
-            
+
             while (!isValidInput)
             {
                 Console.Write("Enter a number to count to: ");
                 string input = Console.ReadLine();
-                
+
                 if (int.TryParse(input, out number) && number > 0)
                 {
                     isValidInput = true;
@@ -23,15 +24,23 @@ namespace Agent4
                     Console.WriteLine("Invalid input. Please enter a positive integer greater than 0.");
                 }
             }
-            
+
             Console.WriteLine($"You entered: {number}");
             Console.WriteLine("Counting to your number:");
             
-            for (int i = 1; i <= number; i++)
+            try
             {
-                Console.WriteLine(i);
+                for (int i = 1; i <= number; i++)
+                {
+                    Console.WriteLine(i);
+                    await Task.Delay(500);
+                }
             }
-            
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred during counting: {ex.Message}");
+            }
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
