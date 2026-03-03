@@ -9,7 +9,7 @@ namespace Agent4
         {
             Console.WriteLine("Welcome to the Number Counter Application!");
             Console.WriteLine("==========================================");
-            
+
             int number = 0;
             bool isValidInput = false;
 
