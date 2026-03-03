@@ -2,9 +2,11 @@
 
 A C# console application repository with standard project structure targeting .NET 6.0 or later framework.
 
+
 ## Overview
 
 This repository contains a basic C# console application structure. It serves as the foundation for all subsequent development tasks.
+
 
 ## Getting Started
 
