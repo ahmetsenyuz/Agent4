@@ -10,11 +10,11 @@ This repository contains a basic C# console application structure. It serves as 
 
 These instructions will get you a copy of the project up and running on your local machine.
 
-### Prerequisites
+## Prerequisites
 
 - .NET 6.0 or later SDK
 
-### Building and Running
+## Building and Running
 
 ```bash
 dotnet build
@@ -26,3 +26,10 @@ dotnet run
 - `Agent4.sln` - Visual Studio solution file
 - `Agent4.csproj` - C# project file
 - `Program.cs` - Main application entry point
+
+## Testing
+
+Unit tests and documentation have been added to verify the application functionality:
+
+- `Tests/UnitTest1.cs` - Unit tests for various input scenarios
+- `Tests/TestDocumentation.md` - Comprehensive test documentation including manual testing instructions
