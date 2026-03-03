@@ -7,6 +7,9 @@ namespace Agent4
     {
         static async Task Main(string[] args)
         {
+            Console.WriteLine("Welcome to the Number Counter Application!");
+            Console.WriteLine("==========================================");
+            
             int number = 0;
             bool isValidInput = false;
 
@@ -27,13 +30,14 @@ namespace Agent4
 
             Console.WriteLine($"You entered: {number}");
             Console.WriteLine("Counting to your number:");
-            
+            Console.WriteLine();
+
             try
             {
                 for (int i = 1; i <= number; i++)
                 {
                     Console.WriteLine(i);
-                    await Task.Delay(500);
+                    await Task.Delay(500); // 500ms delay between numbers
                 }
             }
             catch (Exception ex)
@@ -41,6 +45,10 @@ namespace Agent4
                 Console.WriteLine($"An error occurred during counting: {ex.Message}");
             }
 
+            Console.WriteLine();
+            Console.WriteLine("Counting completed successfully!");
+            Console.WriteLine("Thank you for using the Number Counter Application.");
+            Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
