@@ -1,0 +1,83 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio 2015/2017/2019 cache/options
+.vs/
+*.vscode/
+*.user
+*.vs
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# Visual Studio 2015 - 2019 auto generated files
+*.generated.*
+*.cache
+
+# Visual Studio 2017 auto generated files
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio 2019 auto generated files
+*.vcxproj.user
+*.vcxproj.filters
+
+# Visual Studio 2022 auto generated files
+*.vcxproj.user
+*.vcxproj.filters
+
+# Visual Studio Code
+.vscode/
+
+# NuGet packages
+/packages/
+*.nupkg
+*.snupkg
+
+# IDE
+.idea/
+*.iml
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.manifest
+*.exp
+*.lib
+*.obj
+*.pch
+*.idb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlh
+*.tli
+*.tmp
+*.log
+*.bak
+*.swp
+*~
